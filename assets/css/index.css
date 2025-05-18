@@ -149,14 +149,14 @@ header {
 	.nav-burger {
 		position: absolute;
 		top: var(--header-height);
-		left: 0;
+		right: -100%;
 		display: grid;
 		gap: 0.5rem;
 		padding: 0 0 var(--header-height) 0;
 		margin: 0;
 		background-color: var(--header-bg-color);
 		width: 100%;
-		transform: translateX(100%);
+		/* transform: translateX(100%); */
 		transition: transform 0.2s;
 		z-index: 1000;
 	}
@@ -187,7 +187,7 @@ header {
 }
 
 .nav-burger--opened {
-	transform: translateY(0) !important;
+	transform: translateX(-100%) !important;
 }
 
 .hidden {
