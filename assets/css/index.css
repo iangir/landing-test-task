@@ -1,5 +1,5 @@
-@import "fonts.css";
-@import "variables.css";
+@import url("./fonts.css");
+@import url("./variables.css");
 
 html {
 	font: var(--font-m);
